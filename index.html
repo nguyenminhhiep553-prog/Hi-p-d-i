@@ -3,15 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Báo cáo cá nhân - Nguyễn Minh Hiệp</title>
 
 <style>
 
 body{
 margin:0;
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background: linear-gradient(135deg,#3c8ed6,#5aa9e6);
-color:#222;
+color:#333;
+scroll-behavior:smooth;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#3c8ed6;
+}
+
+.hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding-top:60px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
 }
 
 .container{
@@ -20,32 +57,23 @@ margin:auto;
 padding:40px 20px;
 }
 
-.header{
-color:white;
-margin-bottom:40px;
-}
-
-.header h1{
-font-size:32px;
-margin-bottom:10px;
-}
-
-.header p{
-margin:4px 0;
-}
-
 .card{
 background:white;
 padding:30px;
-border-radius:10px;
+border-radius:12px;
+margin-bottom:40px;
 box-shadow:0 5px 20px rgba(0,0,0,0.15);
-margin-bottom:30px;
 line-height:1.7;
 }
 
+.card img{
+width:100%;
+border-radius:10px;
+margin:15px 0;
+}
+
 h2{
-color:#2d6fb8;
-margin-bottom:15px;
+color:#3c8ed6;
 }
 
 ul{
@@ -53,10 +81,10 @@ padding-left:20px;
 }
 
 footer{
-text-align:center;
+background:#333;
 color:white;
+text-align:center;
 padding:30px;
-font-size:14px;
 }
 
 </style>
@@ -64,32 +92,45 @@ font-size:14px;
 
 <body>
 
+<nav>
+<a href="#gioithieu">Giới thiệu</a>
+<a href="#nangluc">Năng lực</a>
+<a href="#duan">Dự án</a>
+<a href="#lienhe">Liên hệ</a>
+</nav>
+
+<div class="hero">
+
+<h1>BÁO CÁO CÁ NHÂN</h1>
+<p>Hành Trình Chinh Phục Công Nghệ</p>
+<p><b>Nguyễn Minh Hiệp – Lớp 11B4</b></p>
+
+</div>
+
 <div class="container">
 
-<div class="header">
-<h1>BÁO CÁO CÁ NHÂN: HÀNH TRÌNH CHINH PHỤC CÔNG NGHỆ</h1>
-<p><b>Người thực hiện:</b> Nguyễn Minh Hiệp</p>
-<p><b>Lớp:</b> 11B4 – Trường THPT Tôn Đức Thắng</p>
-</div>
+<section id="gioithieu" class="card">
 
-<div class="card">
 <h2>1. Giới thiệu bản thân</h2>
 
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
 <p>
-Tôi tên là Nguyễn Minh Hiệp, hiện đang là học sinh lớp 11B4 tại trường THPT Tôn Đức Thắng. 
-Tôi sinh ra và lớn lên tại thôn Vạn Quang Vinh, xã Tân Định, tỉnh Khánh Hòa – một vùng đất hiền hòa đã nuôi dưỡng trong tôi đức tính kiên trì và lòng khát khao khám phá.
+Tôi tên là Nguyễn Minh Hiệp, hiện đang là học sinh lớp 11B4 tại trường THPT Tôn Đức Thắng. Tôi sinh ra và lớn lên tại thôn Vạn Quang Vinh, xã Tân Định, tỉnh Khánh Hòa – một vùng đất hiền hòa đã nuôi dưỡng trong tôi đức tính kiên trì và lòng khát khao khám phá.
 </p>
 
 <p>
-Ngay từ những năm đầu cấp hai, khi lần đầu tiếp xúc với những dòng lệnh đơn giản, tôi đã bị cuốn hút bởi thế giới của những con số và thuật toán. 
-Với tôi, lập trình không chỉ là việc gõ những đoạn mã khô khan, mà là một nghệ thuật sáng tạo để giải quyết các vấn đề trong cuộc sống. 
-Bản thân tôi luôn tự nhận mình là một người có tư duy logic, thích tìm tòi những công nghệ mới và không ngại đối mặt với những bài toán khó.
+Ngay từ những năm đầu cấp hai, khi lần đầu tiếp xúc với những dòng lệnh đơn giản, tôi đã bị cuốn hút bởi thế giới của những con số và thuật toán. Với tôi, lập trình không chỉ là việc gõ những đoạn mã khô khan, mà là một nghệ thuật sáng tạo để giải quyết các vấn đề trong cuộc sống. Bản thân tôi luôn tự nhận mình là một người có tư duy logic, thích tìm tòi những công nghệ mới và không ngại đối mặt với những bài toán khó.
 </p>
 
-</div>
+</section>
 
-<div class="card">
+
+<section id="nangluc" class="card">
+
 <h2>2. Tóm tắt năng lực</h2>
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
 
 <p>
 Dù vẫn đang trong quá trình học tập và rèn luyện tại ghế nhà trường, tôi đã chủ động xây dựng cho mình một nền tảng kiến thức cơ bản về Công nghệ thông tin:
@@ -117,42 +158,44 @@ Dù vẫn đang trong quá trình học tập và rèn luyện tại ghế nhà 
 
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+
+<section id="duan" class="card">
+
 <h2>3. Các dự án đã thực hiện</h2>
+
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
 
 <ul>
 
 <li>
-<b>Ứng dụng giải toán tự động:</b> 
-Xây dựng một chương trình bằng ngôn ngữ lập trình giúp giải các phương trình bậc hai, hệ phương trình và tính diện tích các hình học phức tạp, giúp ích cho việc kiểm tra kết quả bài tập toán.
+<b>Ứng dụng giải toán tự động:</b> Xây dựng một chương trình bằng ngôn ngữ lập trình giúp giải các phương trình bậc hai, hệ phương trình và tính diện tích các hình học phức tạp, giúp ích cho việc kiểm tra kết quả bài tập toán.
 </li>
 
 <li>
-<b>Quản lý danh sách lớp:</b> 
-Thiết kế một chương trình quản lý thông tin học sinh đơn giản (họ tên, ngày sinh, điểm số) với các tính năng thêm, xóa và tìm kiếm tên học sinh.
+<b>Quản lý danh sách lớp:</b> Thiết kế một chương trình quản lý thông tin học sinh đơn giản (họ tên, ngày sinh, điểm số) với các tính năng thêm, xóa và tìm kiếm tên học sinh.
 </li>
 
 <li>
-<b>Tìm hiểu thiết kế Web:</b> 
-Tự xây dựng một trang Blog cá nhân đơn giản bằng HTML để chia sẻ những kiến thức về công nghệ mà mình học được mỗi ngày.
+<b>Tìm hiểu thiết kế Web:</b> Tự xây dựng một trang Blog cá nhân đơn giản bằng HTML để chia sẻ những kiến thức về công nghệ mà mình học được mỗi ngày.
 </li>
 
 <li>
-<b>Tham gia các kỳ thi Tin học:</b> 
-Luôn tích cực đóng góp trong các giờ thực hành Tin học tại lớp 11B4 và tham gia các đội nhóm trao đổi về lập trình tại trường.
+<b>Tham gia các kỳ thi Tin học:</b> Luôn tích cực đóng góp trong các giờ thực hành Tin học tại lớp 11B4 và tham gia các đội nhóm trao đổi về lập trình tại trường.
 </li>
 
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+
+<section id="lienhe" class="card">
+
 <h2>4. Liên hệ bản thân</h2>
 
 <p>
-Tôi luôn tâm niệm rằng: <b>"Công nghệ chỉ thực sự có giá trị khi nó phục vụ con người".</b>
+Tôi luôn tâm niệm rằng: "Công nghệ chỉ thực sự có giá trị khi nó phục vụ con người".
 </p>
 
 <p>
@@ -163,22 +206,19 @@ Với xuất phát điểm từ một ngôi trường mang tên bác Tôn Đức
 Tôi mong muốn có thể dùng những dòng code của mình để xây dựng các giải pháp công nghệ hiện đại, đóng góp một phần nhỏ bé cho sự phát triển của quê hương Khánh Hòa nói riêng và đất nước nói chung.
 </p>
 
-</div>
-
-<div class="card">
-<h2>THÔNG TIN LIÊN LẠC</h2>
+<h3>THÔNG TIN LIÊN LẠC</h3>
 
 <p><b>Họ và tên:</b> Nguyễn Minh Hiệp</p>
 <p><b>Địa chỉ:</b> Thôn Vạn Quang Vinh, xã Tân Định, tỉnh Khánh Hòa.</p>
 <p><b>Email:</b> nguyenminhhiep553@gmail.com</p>
 <p><b>Số điện thoại:</b> (Chưa cập nhật)</p>
 
-</div>
+</section>
 
 </div>
 
 <footer>
-Trang web báo cáo cá nhân – Nguyễn Minh Hiệp | Lớp 11B4 – THPT Tôn Đức Thắng
+© 2026 - Nguyễn Minh Hiệp | THPT Tôn Đức Thắng
 </footer>
 
 </body>
